@@ -79,6 +79,13 @@ val state by viewModel.state.collectAsStateWithLifecycle()
     LaunchedEffect(state.searchResults){
         searchResultsListState.animateScrollToItem(0)
     }
+    LaunchedEffect(state.selectedTabIndex){
+        pagerState.animateScrollToPage(state.selectedTabIndex)
+    }
+    LaunchedEffect(pagerState.currentPage){
+            onAction(BookListAction.onTabSelected(pagerState.currentPage))
+    }
+
     Column(
     modifier = Modifier
         .fillMaxSize()

@@ -1,3 +1,7 @@
 version:0
 string|close_hint|IENsZWFyIHNlYXJjaA==
+string|favorites|IEZhdm9yaXRlcw==
+string|no_books|IFdlIGNvdWxkIG5vdCBmb3VuZCBhbnkgZmF2b3JpdGUgYm9va3M=
+string|no_search|IFdlIGNvdWxkIG5vdCBmb3VuZCBhbnkgYm9va3M=
 string|search_hint|IFNlYXJjaC4uLg==
+string|search_results|IFNlYXJjaCBSZXN1bHRz
