@@ -1,47 +1,19 @@
-@file:OptIn(org.jetbrains.compose.resources.InternalResourceApi::class)
+@file:OptIn(InternalResourceApi::class)
 
 package cmp_bookpedia.composeapp.generated.resources
 
 import kotlin.OptIn
-import kotlin.String
-import kotlin.collections.MutableMap
 import org.jetbrains.compose.resources.InternalResourceApi
 import org.jetbrains.compose.resources.StringResource
+import org.jetbrains.compose.resources.ResourceItem
+import org.jetbrains.compose.resources.LanguageQualifier
+import org.jetbrains.compose.resources.RegionQualifier
+import org.jetbrains.compose.resources.ThemeQualifier
+import org.jetbrains.compose.resources.DensityQualifier
 
-private object CommonMainString0 {
-  public val close_hint: StringResource by 
-      lazy { init_close_hint() }
-
-  public val search_hint: StringResource by 
-      lazy { init_search_hint() }
-}
-
-@InternalResourceApi
-internal fun _collectCommonMainString0Resources(map: MutableMap<String, StringResource>) {
-  map.put("close_hint", CommonMainString0.close_hint)
-  map.put("search_hint", CommonMainString0.search_hint)
-}
-
-internal val Res.string.close_hint: StringResource
-  get() = CommonMainString0.close_hint
-
-private fun init_close_hint(): StringResource = org.jetbrains.compose.resources.StringResource(
-  "string:close_hint", "close_hint",
-    setOf(
-      org.jetbrains.compose.resources.ResourceItem(setOf(),
-    "composeResources/cmp_bookpedia.composeapp.generated.resources/values/strings.commonMain.cvr",
-    10, 38),
-    )
-)
-
-internal val Res.string.search_hint: StringResource
-  get() = CommonMainString0.search_hint
-
-private fun init_search_hint(): StringResource = org.jetbrains.compose.resources.StringResource(
-  "string:search_hint", "search_hint",
-    setOf(
-      org.jetbrains.compose.resources.ResourceItem(setOf(),
-    "composeResources/cmp_bookpedia.composeapp.generated.resources/values/strings.commonMain.cvr",
-    49, 35),
-    )
-)
+internal val Res.string.close_hint: StringResource by lazy { StringResource("string:close_hint", "close_hint", setOf(ResourceItem(setOf(),"values/strings.xml",-1,-1))) }
+internal val Res.string.favorites: StringResource by lazy { StringResource("string:favorites", "favorites", setOf(ResourceItem(setOf(),"values/strings.xml",-1,-1))) }
+internal val Res.string.no_books: StringResource by lazy { StringResource("string:no_books", "no_books", setOf(ResourceItem(setOf(),"values/strings.xml",-1,-1))) }
+internal val Res.string.no_search: StringResource by lazy { StringResource("string:no_search", "no_search", setOf(ResourceItem(setOf(),"values/strings.xml",-1,-1))) }
+internal val Res.string.search_hint: StringResource by lazy { StringResource("string:search_hint", "search_hint", setOf(ResourceItem(setOf(),"values/strings.xml",-1,-1))) }
+internal val Res.string.search_results: StringResource by lazy { StringResource("string:search_results", "search_results", setOf(ResourceItem(setOf(),"values/strings.xml",-1,-1))) }
