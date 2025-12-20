@@ -2,7 +2,6 @@ package com.plcoding.bookpedia.book.presentation.book_list
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import androidx.room.Query
 import com.plcoding.bookpedia.book.dormain.Book
 import com.plcoding.bookpedia.book.dormain.BookRepository
 import com.plcoding.bookpedia.core.domain.onError
@@ -11,7 +10,6 @@ import com.plcoding.bookpedia.core.presentation.toUiText
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
-import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.debounce
 import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.launchIn
