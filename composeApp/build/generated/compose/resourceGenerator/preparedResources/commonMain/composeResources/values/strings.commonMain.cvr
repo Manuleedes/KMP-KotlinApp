@@ -1,7 +1,13 @@
 version:0
 string|close_hint|IENsZWFyIHNlYXJjaA==
+string|disk_full|IFNlZW1zIHlvdXIgZGlzayBpcyBmdWxs
 string|favorites|IEZhdm9yaXRlcw==
 string|no_books|IFdlIGNvdWxkIG5vdCBmb3VuZCBhbnkgZmF2b3JpdGUgYm9va3M=
+string|no_internet|IGNvdWxkIG5vdCByZWFjaCB0aGUgc2VydmVyLCBjaGVjayBpbnRlcm5ldCBjb25uZWN0aW9u
 string|no_search|IFdlIGNvdWxkIG5vdCBmb3VuZCBhbnkgYm9va3M=
+string|request_timeout|IHRoZSByZXF1ZXN0IHRpbWVvdXQuLi4=
 string|search_hint|IFNlYXJjaC4uLg==
 string|search_results|IFNlYXJjaCBSZXN1bHRz
+string|serialization|IFdlIGNvdWxkIG5vdCBwYXJzZSBkYXRhLi4=
+string|too_many_requests|IHlvdXIgcXVvdGEgc2VlbXMgZXhjZWVkZWQ=
+string|unknown|IFNvbWV0aGluZyB3ZW50IHdyb25nIQ==
