@@ -20,7 +20,5 @@ fun SearchedBookDto.toBook(): Book{
         ratingCount = ratingsCount,
         numPages = numPagesMedian,
         numEditions = editionsCount ?: 0
-
-
     )
 }
