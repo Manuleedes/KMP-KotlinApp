@@ -12,4 +12,14 @@
     <string name="no_internet"> could not reach the server, check internet connection</string>
     <string name="too_many_requests"> your quota seems exceeded</string>
     <string name="serialization"> We could not parse data..</string>
+    <string name=" book_cover"> Book Cover</string>
+    <string name="rating"> Rating</string>
+    <string name="pages"> Pages</string>
+    <string name = "languages"> Languages</string>
+    <string name="synopsis"> Synopsis</string>
+    <string name = "description_not"> Description not available...</string>
+
+
+
+
 </resources>
