@@ -14,6 +14,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.navigation
 import androidx.navigation.compose.rememberNavController
 import com.plcoding.bookpedia.book.presentation.book_detail.BookDetailAction
+import com.plcoding.bookpedia.book.presentation.book_detail.BookDetailScreenRoot
 import com.plcoding.bookpedia.book.presentation.book_detail.BookDetailViewModel
 import com.plcoding.bookpedia.book.presentation.book_list.SelectedBookViewModel
 import com.plcoding.bookpedia.book.presentation.book_list.BookListScreenRoot
@@ -26,58 +27,55 @@ import org.koin.compose.viewmodel.koinViewModel
 fun App() {
     MaterialTheme {
         val navController = rememberNavController()
-            NavHost(
-                navController = navController,
-                startDestination = Route.BookGraph
-            ){
-                navigation<Route.BookGraph>(
-                    startDestination = Route.BookList
-                ){
-                    composable<Route.BookList> {
-                        val viewModel = koinViewModel<BookListViewModel>()
-                        val selectedBookViewModel =
-                            it.sharedKoinViewModel<SelectedBookViewModel>(navController)
-                        LaunchedEffect(true){
-                            selectedBookViewModel.onSelectedBook(null)
+        NavHost(
+            navController = navController,
+            startDestination = Route.BookGraph
+        ) {
+            navigation<Route.BookGraph>(
+                startDestination = Route.BookList
+            ) {
+                composable<Route.BookList> {
+                    val viewModel = koinViewModel<BookListViewModel>()
+                    val selectedBookViewModel =
+                        it.sharedKoinViewModel<SelectedBookViewModel>(navController)
+                    LaunchedEffect(true) {
+                        selectedBookViewModel.onSelectedBook(null)
+                    }
+                    BookListScreenRoot(
+                        viewModel = viewModel,
+                        onBookClick = { book ->
+                            selectedBookViewModel.onSelectedBook(book)
+                            navController.navigate(
+                                Route.BookDetail(book.id)
+                            )
                         }
-                        BookListScreenRoot(
-                            viewModel = viewModel ,
-                            onBookClick = { book ->
-                                selectedBookViewModel.onSelectedBook(book)
-                                navController.navigate(
-                                    Route.BookDetail(book.id)
-                                )
-                            }
-                        )
-                    }
-                    composable<Route.BookDetail> {
-                        val selectedBookViewModel =
-                            it.sharedKoinViewModel<SelectedBookViewModel>(navController)
-                        val viewModel = koinViewModel<BookDetailViewModel>()
-                        val selectedBook by selectedBookViewModel.selectedBook.collectAsStateWithLifecycle()
+                    )
+                }
+                composable<Route.BookDetail> {
+                    val selectedBookViewModel =
+                        it.sharedKoinViewModel<SelectedBookViewModel>(navController)
+                    val viewModel = koinViewModel<BookDetailViewModel>()
+                    val selectedBook by selectedBookViewModel.selectedBook.collectAsStateWithLifecycle()
 
-                        LaunchedEffect(selectedBook) {
-                            selectedBook?.let {
-                                viewModel.onAction(
-                                    BookDetailAction.OnSelectedBBookChange(
-                                        selectedBook!!
-                                    )
+                    LaunchedEffect(selectedBook) {
+                        selectedBook?.let {
+                            viewModel.onAction(
+                                BookDetailAction.OnSelectedBBookChange(
+                                    selectedBook!!
                                 )
-                            }
+                            )
                         }
-                        BookListScreenRoot(
-                            viewModel = viewModel,
-                            onBookClick = {
-                                navController.navigateUp()
-                            }
-                        )
+                    }
+                    BookDetailScreenRoot(
+                        viewModel = viewModel,
+                        onBackClick = {
+                            navController.navigateUp()
+                        }
+                    )
 
-                    }
-                    }
                 }
             }
-
-
+        }
     }
     }
 @Composable

@@ -11,11 +11,14 @@ import org.jetbrains.compose.resources.RegionQualifier
 import org.jetbrains.compose.resources.ThemeQualifier
 import org.jetbrains.compose.resources.DensityQualifier
 
-internal val Res.string. book_cover: StringResource by lazy { StringResource("string: book_cover", " book_cover", setOf(ResourceItem(setOf(),"values/strings.xml",-1,-1))) }
+internal val Res.string.book_cover: StringResource by lazy { StringResource("string:book_cover", "book_cover", setOf(ResourceItem(setOf(),"values/strings.xml",-1,-1))) }
 internal val Res.string.close_hint: StringResource by lazy { StringResource("string:close_hint", "close_hint", setOf(ResourceItem(setOf(),"values/strings.xml",-1,-1))) }
 internal val Res.string.description_not: StringResource by lazy { StringResource("string:description_not", "description_not", setOf(ResourceItem(setOf(),"values/strings.xml",-1,-1))) }
 internal val Res.string.disk_full: StringResource by lazy { StringResource("string:disk_full", "disk_full", setOf(ResourceItem(setOf(),"values/strings.xml",-1,-1))) }
+internal val Res.string.favorite_mark: StringResource by lazy { StringResource("string:favorite_mark", "favorite_mark", setOf(ResourceItem(setOf(),"values/strings.xml",-1,-1))) }
+internal val Res.string.favorite_remove: StringResource by lazy { StringResource("string:favorite_remove", "favorite_remove", setOf(ResourceItem(setOf(),"values/strings.xml",-1,-1))) }
 internal val Res.string.favorites: StringResource by lazy { StringResource("string:favorites", "favorites", setOf(ResourceItem(setOf(),"values/strings.xml",-1,-1))) }
+internal val Res.string.go_back: StringResource by lazy { StringResource("string:go_back", "go_back", setOf(ResourceItem(setOf(),"values/strings.xml",-1,-1))) }
 internal val Res.string.languages: StringResource by lazy { StringResource("string:languages", "languages", setOf(ResourceItem(setOf(),"values/strings.xml",-1,-1))) }
 internal val Res.string.no_books: StringResource by lazy { StringResource("string:no_books", "no_books", setOf(ResourceItem(setOf(),"values/strings.xml",-1,-1))) }
 internal val Res.string.no_internet: StringResource by lazy { StringResource("string:no_internet", "no_internet", setOf(ResourceItem(setOf(),"values/strings.xml",-1,-1))) }
