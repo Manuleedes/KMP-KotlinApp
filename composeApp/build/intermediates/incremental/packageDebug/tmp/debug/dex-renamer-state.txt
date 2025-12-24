@@ -1,4 +1,4 @@
-#Tue Dec 23 12:27:55 EAT 2025
+#Wed Dec 24 13:34:45 EAT 2025
 base.0=/home/lidigu/Documents/pedia/composeApp/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 base.1=/home/lidigu/Documents/pedia/composeApp/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
 base.10=/home/lidigu/Documents/pedia/composeApp/build/intermediates/dex/debug/mergeProjectDexDebug/12/classes.dex
@@ -6,6 +6,7 @@ base.11=/home/lidigu/Documents/pedia/composeApp/build/intermediates/dex/debug/me
 base.12=/home/lidigu/Documents/pedia/composeApp/build/intermediates/dex/debug/mergeProjectDexDebug/6/classes.dex
 base.13=/home/lidigu/Documents/pedia/composeApp/build/intermediates/dex/debug/mergeProjectDexDebug/9/classes.dex
 base.14=/home/lidigu/Documents/pedia/composeApp/build/intermediates/dex/debug/mergeProjectDexDebug/13/classes.dex
+base.15=/home/lidigu/Documents/pedia/composeApp/build/intermediates/dex/debug/mergeProjectDexDebug/7/classes.dex
 base.2=/home/lidigu/Documents/pedia/composeApp/build/intermediates/dex/debug/mergeProjectDexDebug/14/classes.dex
 base.3=/home/lidigu/Documents/pedia/composeApp/build/intermediates/dex/debug/mergeProjectDexDebug/4/classes.dex
 base.4=/home/lidigu/Documents/pedia/composeApp/build/intermediates/dex/debug/mergeProjectDexDebug/8/classes.dex
@@ -21,6 +22,7 @@ path.11=15/classes.dex
 path.12=6/classes.dex
 path.13=9/classes.dex
 path.14=13/classes.dex
+path.15=7/classes.dex
 path.2=14/classes.dex
 path.3=4/classes.dex
 path.4=8/classes.dex
@@ -36,6 +38,7 @@ renamed.11=classes12.dex
 renamed.12=classes13.dex
 renamed.13=classes14.dex
 renamed.14=classes15.dex
+renamed.15=classes16.dex
 renamed.2=classes3.dex
 renamed.3=classes4.dex
 renamed.4=classes5.dex

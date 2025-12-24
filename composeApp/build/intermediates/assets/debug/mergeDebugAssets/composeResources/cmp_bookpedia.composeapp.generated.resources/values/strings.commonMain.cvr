@@ -3,7 +3,10 @@ string|book_cover|IEJvb2sgQ292ZXI=
 string|close_hint|IENsZWFyIHNlYXJjaA==
 string|description_not|IERlc2NyaXB0aW9uIG5vdCBhdmFpbGFibGUuLi4=
 string|disk_full|IFNlZW1zIHlvdXIgZGlzayBpcyBmdWxs
+string|favorite_mark|IE1hcmsgYXMgRmF2b3JpdGVz
+string|favorite_remove|IFJlbW92ZSBmcm9tIGZhdm9yaXRl
 string|favorites|IEZhdm9yaXRlcw==
+string|go_back|IEdvIEJhY2s=
 string|languages|IExhbmd1YWdlcw==
 string|no_books|IFdlIGNvdWxkIG5vdCBmb3VuZCBhbnkgZmF2b3JpdGUgYm9va3M=
 string|no_internet|IGNvdWxkIG5vdCByZWFjaCB0aGUgc2VydmVyLCBjaGVjayBpbnRlcm5ldCBjb25uZWN0aW9u
