@@ -1,1 +1,12 @@
-Compose multiplatform using ktor 3.0 as networking cliwnt
+Compose multiplatform using ktor 3.0 as networking client,,
+Used coil3 for image loading,
+Room database to store favorite books,,
+use ktor to talk to a remote book api and fetch books from the api,,
+koin for dependency injection mechanism,
+used courotimes to launch in view Model scope,,
+used default navigation graph to navigate screens,,
+used pulse animations to animate books,,
+used materal3 theme which comes with dark mode theme,,
+used jetpack compose with composables instead on normal xml code,
+used MVI Architecture pattern to design the app,,
+presentation -> domain <- data model to prevent crushing of the app when launched on mutiple environments
